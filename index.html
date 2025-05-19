@@ -28,6 +28,13 @@
         modal.classList.toggle("hidden");
       }
     </script>
+    <script>
+      function toggleTreatmentsModal() {
+        const modal = document.getElementById("treatments-modal");
+        modal.classList.toggle("hidden");
+      }
+    </script>
+    
   </head>
   <body>
     <header class="sticky-header">
@@ -57,6 +64,41 @@
         </form>
       </div>
     </div>
+    <div id="treatments-modal" class="modal hidden">
+      <div class="modal-content">
+        <span class="close-btn" onclick="toggleTreatmentsModal()">&times;</span>
+        <h3>Full List of Spine Treatments</h3>
+        <ul class="modal-list">
+          <li>✅ Slipped Disc & Sciatica Treatment</li>
+          <li>✅ Spine Deformity Correction (Scoliosis, Kyphosis)</li>
+          <li>✅ Minimally Invasive Spine Surgery</li>
+          <li>✅ Spine Fracture & Trauma Care</li>
+          <li>✅ Spine Tumor Management</li>
+          <li>✅ Pediatric Spine Care</li>
+          <li>✅ Neuro-Rehabilitation & Physiotherapy</li>
+          <li>✅ Spinal Cord Injury Management</li>
+          <li>✅ Degenerative Disc Disease</li>
+          <li>✅ Endoscopic Spine Surgery</li>
+          <li>✅ Complex Spinal Reconstruction</li>
+          <li>✅ Slipped Disc Treatment</li>
+          <li>✅ Sciatica Pain Relief</li>
+          <li>✅ Spine Deformity Correction (Scoliosis, Kyphosis)</li>
+          <li>✅ Minimally Invasive Spine Surgery</li>
+          <li>✅ Robotic-Assisted Spine Surgery</li>
+          <li>✅ Spine Fracture & Trauma Management</li>
+          <li>✅ Spine Tumor Treatment</li>
+          <li>✅ Pediatric Spine Surgery</li>
+          <li>✅ Spinal Cord Compression Relief</li>
+          <li>✅ Cervical & Lumbar Spondylosis</li>
+          <li>✅ Neuro-Rehabilitation</li>
+          <li>✅ Post-Surgical Physiotherapy</li>
+          <li>✅ Spine Injections & Pain Management</li>
+          <li>✅ Endoscopic Spine Surgery</li>
+          <li>✅ Revision Spine Surgeries</li>
+        </ul>
+      </div>
+    </div>
+    
 
     <section class="hero-section" id="form">
       <div class="container hero-grid">
@@ -147,7 +189,7 @@
           <li>✅ Pediatric Spine Care</li>
           <li>✅ Neuro-Rehabilitation & Physiotherapy</li>
         </ul>
-        <button class="secondary-btn">
+        <button class="secondary-btn" onclick="toggleTreatmentsModal()">
           Explore Full List of Spine Treatments
         </button>
       </div>
