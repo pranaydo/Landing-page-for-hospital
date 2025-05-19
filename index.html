@@ -34,6 +34,13 @@
         modal.classList.toggle("hidden");
       }
     </script>
+    <script>
+      function toggleExpertsModal() {
+        const modal = document.getElementById("experts-modal");
+        modal.classList.toggle("hidden");
+      }
+    </script>
+    
     
   </head>
   <body>
@@ -98,6 +105,45 @@
         </ul>
       </div>
     </div>
+    <!-- Full Experts List Modal -->
+<div id="experts-modal" class="modal hidden">
+  <div class="modal-content">
+    <span class="close-btn" onclick="toggleExpertsModal()">&times;</span>
+    <h3>All Spine Experts</h3>
+    <div class="doctor-grid">
+      <div class="doctor-card">
+        <h3>Dr. A. Kumar</h3>
+        <p>MS (Ortho), Fellowship in Spine Surgery</p>
+      </div>
+      <div class="doctor-card">
+        <h3>Dr. B. Nair</h3>
+        <p>Consultant – Pediatric Spine Disorders</p>
+      </div>
+      <div class="doctor-card">
+        <h3>Dr. C. Ramesh</h3>
+        <p>Neuro-Ortho Spine Specialist</p>
+      </div>
+      <!-- Additional experts -->
+      <div class="doctor-card">
+        <h3>Dr. D. Mehta</h3>
+        <p>Minimally Invasive Spine Surgeon</p>
+      </div>
+      <div class="doctor-card">
+        <h3>Dr. E. Sharma</h3>
+        <p>Spine Deformity Specialist</p>
+      </div>
+      <div class="doctor-card">
+        <h3>Dr. F. Singh</h3>
+        <p>Robotic Spine Surgery Consultant</p>
+      </div>
+      <div class="doctor-card">
+        <h3>Dr. G. Thomas</h3>
+        <p>Spinal Trauma & Tumor Surgeon</p>
+      </div>
+    </div>
+  </div>
+</div>
+
     
 
     <section class="hero-section" id="form">
@@ -218,7 +264,7 @@
         <div class="trust-ribbon">
           <img src="./nabh-make-2.webp" alt="NABH Accredited" />
           <img src="./insurance-04.png" alt="Insurance Accepted" />
-          <img src="./" alt="24x7 Emergency" />
+          <img src="./hours-doctor.png" alt="24x7 Emergency" />
         </div>
       </div>
     </section>
@@ -241,8 +287,10 @@
             <p>Neuro-Ortho Spine Specialist</p>
           </div>
         </div>
-        <button class="secondary-btn">View All Spine Experts</button>
-      </div>
+        <button class="secondary-btn" onclick="toggleExpertsModal()">
+          View All Spine Experts
+        </button>
+              </div>
     </section>
 
     <!-- PATIENT STORY  -->
